@@ -28,7 +28,7 @@ This is the Arca umbrella repository and the single entry point for understandin
 | `arca-hub` | Service | Configuration Central | Serves producer and location configuration, validates against schemas, and tracks service versions |
 | `arca-port` | Service | Storage Gateway | Provides a unified API over S3, NFS, and SFTP for file transfer, chunked upload, and fixity calculation |
 | `arca-track` | Service | Preservation Tracker | Records every preservation event, enforces the SIP state machine, and provides an immutable audit trail |
-| `arca-samples` | Data | Test Data | Provides lightweight per-producer sample deliveries for local development and e2e testing |
+| `arca-samples` | Data | Test Fixtures | Provides lightweight per-producer sample deliveries for local development and e2e testing |
 
 
 ## Etymology
