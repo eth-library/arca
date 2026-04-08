@@ -27,7 +27,7 @@ This is the Arca umbrella repository and the single entry point for understandin
 | `arca-port` | Storage Gateway | Provides a unified API over S3, NFS, and SFTP for file transfer, chunked upload, and fixity calculation | Planned |
 | `arca-track` | Preservation Tracker | Records every preservation event, enforces the SIP state machine, and provides an immutable audit trail | Planned |
 | `arca-hub` | Configuration Central | Serves producer and location configuration, validates against schemas, and tracks service versions | Planned |
-| `arca-sample` | Test Data | Provides lightweight per-producer sample deliveries for local development and e2e testing | Planned |
+| `arca-samples` | Test Data | Provides lightweight per-producer sample deliveries for local development and e2e testing | Planned |
 | `arca-desk` | Operator UI | Provides a web interface for monitoring pipeline activity and triggering manual actions | Planned |
 
 
