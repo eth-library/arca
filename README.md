@@ -17,18 +17,18 @@ This is the Arca umbrella repository and the single entry point for understandin
 
 ## Components
 
-| Name | Role | Description |
-|---|---|---|
-| [`arca`](https://github.com/eth-library/arca) | Project Umbrella | Provides shared infrastructure for the full system, including Helm charts, local development environment, and e2e test orchestration |
-| [`arca-ops`](https://github.com/eth-library/arca-ops) | GitOps Configuration | Manages Kubernetes deployment across environments using ArgoCD applications, environment-specific Helm values, and External Secrets |
-| [`arca-models`](https://github.com/eth-library/arca-models) | Domain Models | Defines shared data model schemas and generates Python and Java bindings for all services |
-| `arca-desk` | Operator UI | Provides a web interface for monitoring pipeline activity and triggering manual actions |
-| [`arca-flow`](https://github.com/eth-library/arca-flow) | Pipeline Orchestrator | Manages the pipeline lifecycle by detecting deliveries and coordinating staging, validation, packaging, and deposit |
-| `arca-form` | Asset Transformer | Transforms producer metadata and digital assets into validated submission packages |
-| `arca-hub` | Configuration Central | Serves producer and location configuration, validates against schemas, and tracks service versions |
-| `arca-port` | Storage Gateway | Provides a unified API over S3, NFS, and SFTP for file transfer, chunked upload, and fixity calculation |
-| `arca-track` | Preservation Tracker | Records every preservation event, enforces the SIP state machine, and provides an immutable audit trail |
-| `arca-samples` | Test Data | Provides lightweight per-producer sample deliveries for local development and e2e testing |
+| Name | Type | Role | Description |
+|---|---|---|---|
+| [`arca`](https://github.com/eth-library/arca) | Infrastructure | Project Umbrella | Provides shared infrastructure for the full system, including Helm charts, local development environment, and e2e test orchestration |
+| [`arca-ops`](https://github.com/eth-library/arca-ops) | Infrastructure | GitOps Configuration | Manages Kubernetes deployment across environments using ArgoCD applications, environment-specific Helm values, and External Secrets |
+| [`arca-models`](https://github.com/eth-library/arca-models) | Library | Domain Models | Defines shared data model schemas and generates Python and Java bindings for all services |
+| `arca-desk` | Service | Operator UI | Provides a web interface for monitoring pipeline activity and triggering manual actions |
+| [`arca-flow`](https://github.com/eth-library/arca-flow) | Service | Pipeline Orchestrator | Manages the pipeline lifecycle by detecting deliveries and coordinating staging, validation, packaging, and deposit |
+| `arca-form` | Service | Asset Transformer | Transforms producer metadata and digital assets into validated submission packages |
+| `arca-hub` | Service | Configuration Central | Serves producer and location configuration, validates against schemas, and tracks service versions |
+| `arca-port` | Service | Storage Gateway | Provides a unified API over S3, NFS, and SFTP for file transfer, chunked upload, and fixity calculation |
+| `arca-track` | Service | Preservation Tracker | Records every preservation event, enforces the SIP state machine, and provides an immutable audit trail |
+| `arca-samples` | Data | Test Data | Provides lightweight per-producer sample deliveries for local development and e2e testing |
 
 
 ## Etymology
