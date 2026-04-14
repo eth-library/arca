@@ -26,7 +26,6 @@ This is the Arca umbrella repository and the single entry point for understandin
 | `arca-form` | Service | Asset Transformer     | Transforms source system metadata and digital assets into validated submission packages |
 | `arca-port` | Service | Storage Gateway      | Provides a unified API over S3, NFS, and SFTP for file transfer, chunked upload, and fixity calculation |
 | `arca-track` | Service | Preservation Tracker  | Records every preservation event, enforces the SIP state machine, and provides an immutable audit trail |
-| `arca-samples` | Data | Test Fixtures         | Provides lightweight per-producer sample deliveries for local development and e2e testing |
 
 
 ## Etymology
