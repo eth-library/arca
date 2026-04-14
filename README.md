@@ -2,7 +2,7 @@
 
 **ETH Library Zurich · Data Archive · Digital Preservation Pipeline**
 
-[Arca](#etymology) is the digital preservation pipeline of [ETH Zurich's Data Archive](https://library.ethz.ch/en/collections-and-archives/archiving/digital-long-term-preservation/eth-data-archive.html). It bridges the gap between producer systems and permanent preservation by automating the detection, staging, validation, packaging, and deposit of digital assets across heterogeneous source formats.
+[Arca](#etymology) is the digital preservation pipeline of [ETH Zurich's Data Archive](https://library.ethz.ch/en/collections-and-archives/archiving/digital-long-term-preservation/eth-data-archive.html). It bridges the gap between source systems and permanent preservation by automating the detection, staging, validation, packaging, and deposit of digital assets across heterogeneous source formats.
 
 
 ## Vision
@@ -24,8 +24,7 @@ This is the Arca umbrella repository and the single entry point for understandin
 | [`arca-models`](https://github.com/eth-library/arca-models) | Library | Domain Models | Defines shared data model schemas and generates Python and Java bindings for all services |
 | `arca-desk` | Service | Operator UI | Provides a web interface for monitoring pipeline activity and triggering manual actions |
 | [`arca-flow`](https://github.com/eth-library/arca-flow) | Service | Pipeline Orchestrator | Manages the pipeline lifecycle by detecting deliveries and coordinating staging, validation, packaging, and deposit |
-| `arca-form` | Service | Asset Transformer | Transforms producer metadata and digital assets into validated submission packages |
-| `arca-hub` | Service | Configuration Central | Serves producer and location configuration, validates against schemas, and tracks service versions |
+| `arca-form` | Service | Asset Transformer | Transforms source system metadata and digital assets into validated submission packages |
 | `arca-port` | Service | Storage Gateway | Provides a unified API over S3, NFS, and SFTP for file transfer, chunked upload, and fixity calculation |
 | `arca-track` | Service | Preservation Tracker | Records every preservation event, enforces the SIP state machine, and provides an immutable audit trail |
 | `arca-samples` | Data | Test Fixtures | Provides lightweight per-producer sample deliveries for local development and e2e testing |
@@ -33,7 +32,7 @@ This is the Arca umbrella repository and the single entry point for understandin
 
 ## Etymology
 
-Arca takes its name from Latin *arca*, a vessel for safeguarding valuables.[[1]](#references)[[2]](#references) The word traces to *arcēre* (to enclose, guard) and ultimately Proto-Indo-European *h₂erk-* (to hold, contain, guard).[[3]](#references) The system embodies this lineage: it receives digital assets from producers, encloses them in validated preservation packages, and carries them safely into permanent storage. Like an *arca*, it is not the final resting place but the trusted carrier.
+Arca takes its name from Latin *arca*, a vessel for safeguarding valuables.[[1]](#references)[[2]](#references) The word traces to *arcēre* (to enclose, guard) and ultimately Proto-Indo-European *h₂erk-* (to hold, contain, guard).[[3]](#references) The system embodies this lineage: it receives digital assets from source systems, encloses them in validated preservation packages, and carries them safely into permanent storage. Like an *arca*, it is not the final resting place but the trusted carrier.
 
 
 ## References
