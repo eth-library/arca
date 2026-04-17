@@ -22,7 +22,7 @@ This is the Arca umbrella repository and the single entry point for understandin
 | [`arca`](https://github.com/eth-library/arca) | Infrastructure | Project Umbrella      | Provides shared infrastructure for the full system, including Helm charts, local development environment, and e2e test orchestration |
 | [`arca-ops`](https://github.com/eth-library/arca-ops) | Infrastructure | GitOps Configuration  | Manages Kubernetes deployment across environments using ArgoCD applications, environment-specific Helm values, and External Secrets |
 | [`arca-models`](https://github.com/eth-library/arca-models) | Library | Domain Models         | Defines shared data model schemas and generates Python and Java bindings for all services |
-| [`arca-flow`](https://github.com/eth-library/arca-flow) | Service | Pipeline Orchestrator | Manages the pipeline lifecycle by detecting deliveries and coordinating staging, validation, packaging, and deposit |
+| [`arca-flow`](https://github.com/eth-library/arca-flow) | Service | Orchestrator Engine   | Manages the pipeline lifecycle by detecting deliveries and coordinating staging, validation, packaging, and deposit |
 | `arca-form` | Service | Asset Transformer     | Transforms source system metadata and digital assets into validated submission packages |
 | `arca-port` | Service | Storage Gateway      | Provides a unified API over S3, NFS, and SFTP for file transfer, chunked upload, and fixity calculation |
 | `arca-track` | Service | Preservation Tracker  | Records every preservation event, enforces the SIP state machine, and provides an immutable audit trail |
